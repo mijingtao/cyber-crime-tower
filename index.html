@@ -309,6 +309,7 @@ function resetGame() {
 // Init
 document.addEventListener("DOMContentLoaded", () => {
   renderQuestion();
+  document.getElementById("next-btn").onclick = nextQuestion;
 });
 
 // === Background particle animation ===
