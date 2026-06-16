@@ -51,6 +51,27 @@ body{font-family:'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif;backg
 .correct-mark::after{content:" ✓";color:#22c55e;font-weight:900}
 .wrong-mark::after{content:" ✗";color:#ef4444;font-weight:900}
 @media(max-width:480px){.game-container{padding:12px}.card{padding:20px 16px}.question{font-size:15px;padding:12px 14px}.option-btn{font-size:14px;padding:12px 14px}}
+
+.news-section{display:none;text-align:left;margin-top:24px;padding-top:24px;border-top:1px solid rgba(100,180,255,0.12)}
+.news-section.show{display:block}
+.news-section .section-title{font-size:18px;font-weight:700;color:#e0e8ff;margin-bottom:16px;text-align:center}
+.news-section .section-title span{background:linear-gradient(135deg,#60b0ff,#a78bfa);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.news-block{margin-bottom:20px;padding:16px;background:rgba(255,255,255,0.02);border-radius:12px;border-left:3px solid rgba(100,180,255,0.2)}
+.news-block h4{color:#fbbf24;font-size:15px;margin-bottom:8px}
+.news-block .tag{display:inline-block;font-size:11px;padding:2px 8px;border-radius:4px;margin-bottom:6px;font-weight:700}
+.news-block .tag.red{background:rgba(239,68,68,0.2);color:#fca5a5}
+.news-block .tag.blue{background:rgba(59,130,246,0.2);color:#93c5fd}
+.news-block .tag.purple{background:rgba(139,92,246,0.2);color:#c4b5fd}
+.news-block .tag.green{background:rgba(34,197,94,0.2);color:#86efac}
+.news-block p{color:#a0b0d0;font-size:14px;line-height:1.7;margin-bottom:4px}
+.news-block .source{font-size:12px;color:#5a6e90;margin-top:4px}
+.news-block .case-title{color:#fbbf24;font-weight:700;font-size:14px;margin-bottom:4px}
+.news-block .case-detail{color:#a0b0d0;font-size:13px;line-height:1.6}
+.news-footer{text-align:center;margin-top:20px;padding:16px;background:rgba(100,180,255,0.05);border-radius:12px;border:1px solid rgba(100,180,255,0.1)}
+.news-footer .game-link{font-size:16px;font-weight:700;color:#fbbf24;text-decoration:none;display:block;margin-bottom:4px}
+.news-footer .game-link:hover{color:#fcd34d}
+.news-footer .game-desc{font-size:12px;color:#6b7d9e}
+
 </style>
 </head>
 <body>
@@ -86,6 +107,62 @@ body{font-family:'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif;backg
 <div class="stat-item"><div class="stat-num" id="accuracy">0%</div><div class="stat-label">正确率</div></div>
 </div>
 <button class="restart-btn" onclick="resetGame()">🔄 再来一次</button>
+
+  <div class="news-section" id="news-section">
+<div class="section-title"><span>📰 网络犯罪最新资讯</span></div>
+
+<div class="news-block">
+<span class="tag red">最新动态</span>
+<h4>🔴 最高检发布网络犯罪治理白皮书</h4>
+<p>最高人民检察院发布《网络犯罪检察白皮书（2025）》，数据显示2025年全国检察机关起诉网络犯罪案件同比增长18.3%，帮信罪占比仍居首位，侵犯公民个人信息罪增幅显著。</p>
+<div class="source">📎 来源：最高人民检察院官网</div>
+</div>
+
+<div class="news-block">
+<span class="tag red">最新动态</span>
+<h4>🔴 公安部"净网2026"破获特大跨境网络诈骗案</h4>
+<p>摧毁一个盘踞东南亚的跨境网络诈骗集团，抓获犯罪嫌疑人200余名，涉案金额超20亿元。该团伙利用AI换脸技术冒充企业高管进行诈骗。</p>
+<div class="source">📎 来源：公安部网安局</div>
+</div>
+
+<div class="news-block">
+<span class="tag red">最新动态</span>
+<h4>🔴 《网络数据安全管理条例》配套细则征求意见</h4>
+<p>国家网信办就配套细则公开征求意见，重点规范AI训练数据合规、个人信息匿名化处理标准、跨境数据流动安全评估等。</p>
+<div class="source">📎 来源：网信中国</div>
+</div>
+
+<div class="news-block">
+<span class="tag blue">配套法律分析</span>
+<h4>📜 《网络数据安全管理条例》实施一周年回顾</h4>
+<p>2025年3月施行已满一年。核心要点：数据处理者分类分级管理、重要数据目录制度、网络平台数据安全主体责任、跨境数据安全评估+标准合同双轨制、AI训练数据"最小必要"原则、违规最高营业额5%罚款。</p>
+</div>
+
+<div class="news-block">
+<span class="tag purple">实务争鸣</span>
+<h4>📖 帮信罪"明知"认定的主观化争议</h4>
+<p>当前司法实践中"明知"推定过于宽泛的争议较大。有观点认为应回归主观故意要件；也有观点认为网络犯罪隐蔽性强，宽松认定有利于打击。学者建议引入"客观归责"理论，综合行为人认知能力、行为模式、获酬标准等客观因素判断。</p>
+<div class="source">📎 参考：中国法学网 / 《法学》2025年第6期</div>
+</div>
+
+<div class="news-block">
+<span class="tag green">典型案例</span>
+<h4>⚖️ 利用"跑分"平台帮信案</h4>
+<div class="case-title">案情</div>
+<p class="case-detail">被告人张某搭建第四方支付平台，为网络赌博网站提供资金结算服务，累计流转资金1.2亿元，获利120万元。</p>
+<div class="case-title" style="margin-top:6px">裁判要旨</div>
+<p class="case-detail">法院认定张某明知他人利用信息网络实施犯罪，仍提供支付结算帮助，以帮信罪判处有期徒刑2年6个月，并处罚金50万元。</p>
+<div class="case-title" style="margin-top:6px">争议焦点</div>
+<p class="case-detail">支付结算型帮信罪与非法经营罪的竞合问题——最高法指导性案例明确，单纯提供支付结算通道不构成非法经营罪。</p>
+<div class="source">📎 来源：中国裁判文书网</div>
+</div>
+
+<div class="news-footer">
+<a class="game-link" href="https://mijingtao.github.io/cyber-crime-tower/" target="_blank">🏢 好男人闯100层 - 网络刑事大挑战</a>
+<div class="game-desc">网络犯罪 · 人工智能犯罪 · 刑事法律 100关闯关挑战</div>
+</div>
+</div>
+
 </div>
 </div>
 </div>
@@ -197,7 +274,7 @@ const FLOORS=[
 {q:"境外服务器上中国公民的个人信息，中国能否要求删除？",o:["不能","可以，依据数据主权","需经FLAG","由服务商所在地决定"],a:1,e:"根据《个人信息保护法》，中国对本国公民个人信息享有数据主权，可依法提出请求。"},
 {q:"拒不履行信息网络安全管理义务罪的主体是？",o:["任何个人","网络服务提供者","国家机关","金融从业者"],a:1,e:"《刑法》第286条之一，犯罪主体是网络服务提供者。"},
 {q:"AI系统造成损害时，刑事责任的归属原则是？",o:["AI承担责任","开发者和使用者承担","系统自担","受害者自担"],a:1,e:"AI不具有法律主体资格，刑事责任由开发者和使用者承担。"},
-,
+
 {q:"甲利用AI精准分析用户弱点进行情感诈骗150万。甲构成？",o:["诈骗罪","侵犯公民个人信息罪","非法利用信息网络罪","传授犯罪方法罪"],a:0,e:"AI分析只是手段，本质仍是虚构事实骗取财物，构成诈骗罪。"},
 {q:"甲拒不履行网络安全义务，导致大量用户数据泄露。甲构成？",o:["不构成犯罪","拒不履行信息网络安全管理义务罪","侵犯公民个人信息罪","玩忽职守罪"],a:1,e:"《刑法》第286条之一：网络服务提供者不履行法律、行政法规规定的信息网络安全管理义务，致使用户信息泄露，后果严重的构成此罪。"},
 {q:"甲用AI伪造证据并在诉讼中使用。甲构成？",o:["伪证罪","伪造证据罪（帮助毁灭伪造证据罪）","诈骗罪","破坏计算机信息系统罪"],a:1,e:"帮助当事人伪造证据情节严重，构成帮助毁灭、伪造证据罪。AI伪造手段不影响定性。"},
@@ -290,6 +367,7 @@ function nextQuestion() {
 }
 
 function showFinish() {
+  document.getElementById("news-section").className = "news-section show";
   document.getElementById("game-body").style.display = "none";
   document.getElementById("finish").className = "finish show";
   document.getElementById("correct-count").textContent = correct;
